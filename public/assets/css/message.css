@@ -8,6 +8,7 @@
   text-decoration: none;
   box-sizing: border-box;
   font-family: "Poppings", sans-serif;
+  /* color: #fff; */
 }
 
 body{
@@ -17,10 +18,10 @@ body{
 }
 
 .logo{
+  display: flex;
   align-items: center;
-  margin-left: 60px;
   justify-content: center;
-}
+ }
 
 nav{
   position: relative;
@@ -28,10 +29,11 @@ nav{
   bottom: 0;
   height:100vh;
   left: 0;
-  background: #fff;
+  background: #6e77ee;
   width: 280px;
   overflow: hidden;  
   box-shadow: 0 20ox 35px rgba(0,0,0,0.1);
+  color: #fff !important;
 }
 
 .logo img{
@@ -88,8 +90,9 @@ a:hover{
 }
 
 .container{
-  width: 80%;
-  margin: 50px;
+  width: 100%;
+  max-width: 75vw;
+  margin: auto;
 }
 
 .contact-box{
@@ -119,20 +122,23 @@ h1{
 
 .input-row{
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  /* justify-content: space-between;
+  margin-bottom: 20px; */
+  gap: 20px;
+  padding: 10px;
 }
 
 .input-row .input-group{
   flex-basis: 45%;
 }
 
-input{
+input, select{
   width: 100%;
   border: none;
   border-bottom: 3px solid #ccc;
   outline: none;
-  padding-bottom: 5px;
+  padding: 0.5em 1em;
+  border-radius: 5px;
 }
 
 textarea{
@@ -170,4 +176,24 @@ button{
 .contact-right h3{
   font-weight: 600;
   margin-bottom: 30px;
+}
+
+/* Styling Recent Message */
+.messageContainer{
+  display: flex;
+  flex-direction: column;
+  color: black;
+  gap: 0.25em;
+}
+.messageCard{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  gap: 0.25em;
+}
+
+.message{
+  color: black;
 }

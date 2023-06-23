@@ -11,76 +11,95 @@
 }
 body{
     background: #fff;
+    display: flex;
 }
 
-
-.logo{
-    align-items: center;
-    margin-left: 60px;
-    justify-content: center;
-}
-
-nav{
+.cardBox {
     position: relative;
-    top: 0;
-    bottom: 0;
-    height:100vh;
-    left: 0;
+    width: 100vh;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
     background: #fff;
-    width: 280px;
-    overflow: hidden;  
-    box-shadow: 0 20ox 35px rgba(0,0,0,0.1);
-}
-
-.logo img{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-}
-.logo span{
-    font-weight: bold;
-    padding-left: 15px;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-a{
+  }
+  
+  .cardBox .card {
     position: relative;
-    color: rgb(85, 83, 83);
-    font-size: 14px;
-    display: table;
-    width: 288px;
-    padding:10px
-}
-
-
-nav .fas{
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgb(0, 0, 0, 0.08);
+  }
+  
+  .cardBox .card .name {
     position: relative;
-    width: 70px;
-    height: 40px;
-    top: 14px;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color:#6e77ee;
+  }
+  
+  .cardBox .card .cardname {
+    color: rgb(63, 19, 3);
+    font-size: 1.1rem;
+    margin-top: 5px;
+  }
+  
+  .cardBox .card .iconBx {
+    font-size: 3.5rem;
+    color: black;
+  }
+  
+  .cardBox .card:hover {
+    background: #507cdb 31% 14%;
+  }
+
+  
+  .dailyActive {
+    position: relative;
+    display: block;
+    min-height: 500px;
+    padding: 20px;
+    margin-left: 35px;
+    background: white;
+    color: black;
+    box-shadow: 0 7px 25px rgb(184, 87, 53);
+    border-radius: 0 45px;
+    justify-content: space-between;
+  }
+
+  .dailyActive h2{
+    color: black;
+    margin-bottom: 20px;
     text-align: center;
-}
-
-.nav-item h4{
-    margin-right: 10px;
-    justify-content: flex-end;
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-.nav-item{
-    position: relative;
-    top: 12px;
-    margin-left: 10px;
-}
-
-a:hover{
-    background: #eee;
-}
-
-.logout{
-    position: absolute;
-    bottom: 0;
-}
+  }
+  
+  .dailyActive table tr:hover {
+    background: rgb(48, 15, 3);
+    color: white;
+  }
+  
+  .dailyActive table tr td {
+    padding: 30px 20px;
+    box-shadow: 0 7px 25px rgb(133, 114, 107);
+    border-radius: 45px;
+    justify-content: space-between;
+    background: #6e77ee;
+    border-collapse: separate;
+    border-spacing: 15px;
+      }
+  
+  .dailyActive table tr td h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2rem;
+    color: black;
+  }
+  
+  .dailyActive table tr td span {
+    font-size: 14px;
+    color: black;
+  }

@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
   <link href="{{url('assets/css/calendar.css')}}" rel="stylesheet">
+  <link href="{{url('assets/css/nav.css')}}" rel="stylesheet">
   <title>Calendar</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
         <ul>
             <li><a href="#" class="logo"> 
             <img src="assets/img/logo.jpg" alt="" >
-            <span class="nav-item"><h4>Chat System</h4></span>
+            <span class="nav-item"><h4>Message System</h4></span>
             </a></li>
             <li><a href="{{route('Home.index')}}">
                 <i class="fas fa-home"></i>
@@ -43,51 +44,74 @@
         </ul>
     </nav>
     
-  <div class="container">
-    <div class="calendar light">
-      <div class="calendar_header">
-        <h1 class = "header_title">Welcome Back</h1>
-        <p class="header_copy"> Calendar Plan</p>
-      </div>
-      <div class="calendar_plan">
-        <div class="cl_plan">
-          <div class="cl_title">Today</div>
-          <div class="cl_copy">22nd  April  2018</div>
-          <div class="cl_add">
-            <i class="fas fa-plus"></i>
+    <div class="container">
+      <div class="left">
+        <div class="calendar">
+          <div class="month">
+            <i class="fas fa-angle-left prev"></i>
+            <div class="date">december 2015</div>
+            <i class="fas fa-angle-right next"></i>
+          </div>
+          <div class="weekdays">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+          </div>
+          <div class="days"></div>
+          <div class="goto-today">
+            <div class="goto">
+              <input type="text" placeholder="mm/yyyy" class="date-input" />
+              <button class="goto-btn">Go</button>
+            </div>
+            <button class="today-btn">Today</button>
           </div>
         </div>
       </div>
-      <div class="calendar_events">
-        <p class="ce_title">Upcoming Events</p>
-        <div class="event_item">
-          <div class="ei_Dot dot_active"></div>
-          <div class="ei_Title">10:30 am</div>
-          <div class="ei_Copy">Monday briefing with the team</div>
+      <div class="right">
+        <div class="today-date">
+          <div class="event-day">wed</div>
+          <div class="event-date">12th december 2022</div>
         </div>
-        <div class="event_item">
-          <div class="ei_Dot"></div>
-          <div class="ei_Title">12:00 pm</div>
-          <div class="ei_Copy">Lunch for with the besties</div>
-        </div>
-        <div class="event_item">
-          <div class="ei_Dot"></div>
-          <div class="ei_Title">13:00 pm</div>
-          <div class="ei_Copy">Meet with the client for final design <br> @foofinder</div>
-        </div>
-        <div class="event_item">
-          <div class="ei_Dot"></div>
-          <div class="ei_Title">14:30 am</div>
-          <div class="ei_Copy">Plan event night to inspire students</div>
-        </div>
-        <div class="event_item">
-          <div class="ei_Dot"></div>
-          <div class="ei_Title">15:30 am</div>
-          <div class="ei_Copy">Add some more events to the calendar</div>
+        <div class="events"></div>
+        <div class="add-event-wrapper">
+          <div class="add-event-header">
+            <div class="title">Add Event</div>
+            <i class="fas fa-times close"></i>
+          </div>
+          <div class="add-event-body">
+            <div class="add-event-input">
+              <input type="text" placeholder="Event Name" class="event-name" />
+            </div>
+            <div class="add-event-input">
+              <input
+                type="text"
+                placeholder="Event Time From"
+                class="event-time-from"
+              />
+            </div>
+            <div class="add-event-input">
+              <input
+                type="text"
+                placeholder="Event Time To"
+                class="event-time-to"
+              />
+            </div>
+          </div>
+          <div class="add-event-footer">
+            <button class="add-event-btn">Add Event</button>
+          </div>
         </div>
       </div>
+      <button class="add-event">
+        <i class="fas fa-plus"></i>
+      </button>
     </div>
+
   
- 
+ <script src="assets/js/calendar.js"></script>
 </body>
 </html>
