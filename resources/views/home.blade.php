@@ -87,51 +87,24 @@
             </div>
           </div>
 
-          <!-- Daily Activities -->
+          <!-- Daily Activities/Todo list -->
           <div class="dailyActive">
             <div class="cardHeader">
               <h2>Daily Activities</h2>
+              <div class="row">
+                <input type="text" id="inputbox" placeholder="Add to do"> 
+                <button onclick="addTask()">Add</button>
+              </div>
+              <ul id="list-container">
+                {{-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>task 3</li> --}}
+              </ul>
             </div>
-            <table>
-              <tr>
-                <td>
-                  <h3>Monday</h3>
-                  <span>Morning Meetings @ 8:30am</span>
-                </td>
-              </tr>
 
-              <tr>
-                <td>
-                  <h3>Tuesday</h3>
-                  <span>Morning Meetings @ 8:30am</span>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <h3>Wednesday</h3>
-                  <span>Morning Meetings @ 8:30am</span>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <h3>Thursday</h3>
-                  <span>Morning Meetings @ 8:30am</span>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <h3>Friday</h3>
-                  <span>Morning Meetings @ 8:30am</span>
-                </td>
-              </tr>
-            </table>
-          </div>
         </div>
       </div>
     </div>
-
+    <script src="assets/js/home.js"></script>
 </body>
 </html>
