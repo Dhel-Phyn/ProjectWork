@@ -48,8 +48,8 @@
         <div class="cardBox">
             <div class="card">
               <div>
-                <div class="name">100</div>
-                <div class="cardname">Recent Login</div>
+                <div class="name">Today</div>
+                <div class="cardname">HOD's meeting with the 300</div>
               </div>
               <div class="iconBx">
                 <ion-icon name="eye-outline"></ion-icon>

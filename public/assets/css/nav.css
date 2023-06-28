@@ -44,6 +44,12 @@ nav .fas {
     top: 14px;
     font-size: 20px;
     text-align: center;
+    color: white !important;
+}
+
+li:hover .fas,
+li:hover .nav-item {
+    color: black !important;
 }
 
 .nav-item h4 {
@@ -57,6 +63,7 @@ nav .fas {
     position: relative;
     top: 12px;
     margin-left: 10px;
+    color: #eee !important;
 }
 
 a:hover {

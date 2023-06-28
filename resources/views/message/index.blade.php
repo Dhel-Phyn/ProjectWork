@@ -100,9 +100,15 @@
               <label>Message</label>
               <textarea rows="5" placeholder="Your Message"></textarea>
 
+              <div class="container-b">
+                <input type="file" class="upload-box">
+              </div>
+
               <button type="submit">Send</button>
             </form>
+            
         </div>  
+
         {{-- Right Side --}}
         <div class="contact-right">
           <h3>Recent Message</h3>
